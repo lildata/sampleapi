@@ -1,0 +1,16 @@
+
+*jar
+.lein-deps-sum
+.lein-failures
+.lein-plugins/
+.lein-repl-history
+/.nrepl-port
+/app.log
+/checkouts/
+/classes/
+/lib/
+/resources/static
+/src/teller/version.clj
+/target/
+pom.xml
+pom.xml.asc

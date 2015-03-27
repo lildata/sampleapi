@@ -1,0 +1,4 @@
+{
+ :port 4321
+ :database-jdbc-url "jdbc:postgresql://localhost:5432/sampleapi?user=postgres"
+}
