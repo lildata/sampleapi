@@ -8,7 +8,6 @@
                  [clams "0.1.0" :exclusions [commons-codec]]
                  [clj-time "0.9.0"]
                  [clojure.jdbc/clojure.jdbc-c3p0 "0.3.1"]
-                 [foe "0.3.0-1-ge28b"]
                  [htmhell "0.1.2"]
                  [org.clojure/clojure "1.6.0"]
                  [org.clojure/java.jdbc "0.3.5"]
@@ -20,10 +19,6 @@
                  [ring-server "0.4.0"]
                  [yesql "0.4.0"]
                  ]
-  :repositories{"internal" {:url "s3://standard-releases/releases/"
-                            :username :env/aws_access_key_id
-                            :passphrase :env/aws_secret_access_key
-                            :sign-releases false}}
   :ragtime {
             :migrations ragtime.sql.files/migrations
             :database "jdbc:postgresql://localhost/sampleapi?user=postgres"}
@@ -31,7 +26,6 @@
                               "jdbc:postgresql://localhost/sampleapi_test?user=postgres"}
                     :jvm-opts ["-Dclams.env=test"]}}
   :plugins [
-            [lein-maven-s3-wagon "0.2.4"]
             [ragtime/ragtime.lein "0.3.8"]
             ]
   )
